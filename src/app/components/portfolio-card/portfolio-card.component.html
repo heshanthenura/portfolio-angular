@@ -1,0 +1,16 @@
+<div class="portfolio-card">
+  <h1 class="card-title">{{ portfolio.title }}</h1>
+  <div class="card-tags">
+    <div class="card-tag" *ngFor="let tag of portfolio.tags">{{ tag }}</div>
+  </div>
+  <p class="card-description">
+    {{ portfolio.description }}
+  </p>
+  <div class="card-buttons">
+    <button>
+      <a [href]="portfolio.sourceLink" target="_blank">Source</a></button
+    ><button class="card-download-btn">
+      <a [href]="portfolio.downloadLink" target="_blank">Download</a>
+    </button>
+  </div>
+</div>

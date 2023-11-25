@@ -1,0 +1,50 @@
+<div class="nav-wrap" [ngClass]="{ 'scrolled-bg': scrolled }">
+  <div class="navbar">
+    <div class="header-links">
+      <h1 class="header" (click)="scrollToTop()">Heshan Thenura</h1>
+      <h1 class="link" routerLink="/"><a>Home</a></h1>
+      <h1 class="link store-btn" routerLink="/store" *ngIf="isHomeRoute()">
+        <a>Store</a>
+      </h1>
+      <h1 class="link" (click)="scrollToAbout()" *ngIf="isHomeRoute()">
+        <a>About</a>
+      </h1>
+      <h1 class="link" (click)="scrollToServices()" *ngIf="isHomeRoute()">
+        <a>Services</a>
+      </h1>
+      <h1
+        class="link"
+        routerLink="/home"
+        (click)="scrollToContacts()"
+        *ngIf="isHomeRoute()"
+      >
+        <a>Portfolio</a>
+      </h1>
+      <h1 class="link" routerLink="/home" (click)="scrollToContacts()">
+        <a>Contact</a>
+      </h1>
+    </div>
+    <div class="menu-btn">
+      <button
+        [ngClass]="{ 'scrolled-menu-btn': scrolled }"
+        (click)="toggleMobileMenu()"
+      >
+        MENU
+      </button>
+    </div>
+  </div>
+  <div
+    class="mobile-navbar"
+    [ngClass]="{ 'scrolled-bg-mobile': scrolled }"
+    *ngIf="showMobileMenu"
+  >
+    <h1><a routerLink="/">Home</a></h1>
+    <h1 class="store-btn-mobile" routerLink="/store"><a>Store</a></h1>
+    <h1 (click)="scrollToAbout()" *ngIf="isHomeRoute()"><a>About</a></h1>
+    <h1 (click)="scrollToServices()" *ngIf="isHomeRoute()"><a>Services</a></h1>
+    <h1 (click)="scrollToPortfolio()" *ngIf="isHomeRoute()">
+      <a>Portfolio</a>
+    </h1>
+    <h1 (click)="scrollToContacts()"><a>Contact</a></h1>
+  </div>
+</div>

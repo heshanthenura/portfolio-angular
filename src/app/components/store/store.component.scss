@@ -1,0 +1,27 @@
+.store-page {
+  margin-top: 50px;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    color: white;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    text-align: center;
+    font-weight: 400;
+    width: 500px;
+  }
+}
+.store-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 880px) {
+  .store-content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 5px;
+  }
+}

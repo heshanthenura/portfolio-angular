@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: black;
+  padding: 5px 0px;
+  ion-icon {
+    font-size: 40px;
+    color: white;
+  }
+}

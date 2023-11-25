@@ -1,0 +1,17 @@
+<app-navbar></app-navbar>
+<div class="store-page">
+  <div class="intro">
+    <h1>
+      Explore the comprehensive range of my open-source apps, all freely
+      available for download
+    </h1>
+  </div>
+  <div class="store-content">
+    <app-store-card
+      *ngFor="let card of storeData"
+      [store]="card"
+    ></app-store-card>
+  </div>
+</div>
+
+<app-footer></app-footer>

@@ -1,0 +1,18 @@
+<div class="store-card">
+  <h1 class="title">{{ store.title }}</h1>
+  <p class="desc">{{ store.description }}</p>
+  <div class="buttons">
+    <a *ngIf="store.gi" [href]="store.github" target="_blank"
+      ><ion-icon name="logo-github"></ion-icon
+    ></a>
+    <a *ngIf="store.wi" [href]="store.windows" target="_blank"
+      ><ion-icon name="logo-windows"></ion-icon
+    ></a>
+    <a *ngIf="store.li" [href]="store.linux" target="_blank"
+      ><ion-icon name="logo-tux"></ion-icon
+    ></a>
+    <a *ngIf="store.mi" [href]="store.mac" target="_blank"
+      ><ion-icon name="logo-apple"></ion-icon
+    ></a>
+  </div>
+</div>

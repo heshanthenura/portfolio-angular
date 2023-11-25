@@ -1,0 +1,74 @@
+<app-navbar [title]="title"></app-navbar>
+<div class="landing-wrap">
+  <div class="landing">
+    <h1 class="intro">Hi, it's me Heshan</h1>
+    <h1 class="summary">
+      I am a proficient freelance Java, JavaFX, and Spring Boot programmer based
+      in Sri Lanka, specializing in creating dynamic and efficient applications.
+    </h1>
+  </div>
+</div>
+
+<div class="store" id="store">
+  <h1>Store</h1>
+
+  <p>Go to store to download my app for free</p>
+  <p routerLink="/store"><button class="store-btn">Go To Store</button></p>
+</div>
+
+<div class="about-me" id="about">
+  <h1>About Me</h1>
+  <div class="para-div">
+    <p class="about-para">
+      I am Heshan, a self-taught programmer with a relentless passion for
+      tackling intricate challenges. My academic background spans pure
+      mathematics, applied mathematics, physics, and computer science, providing
+      me with a diverse toolkit for problem-solving.
+    </p>
+  </div>
+
+  <p>Download CV</p>
+  <div class="skills">
+    <h1>Skills</h1>
+    <div>
+      <p>Java</p>
+      <p>JavaFX</p>
+      <p>SpringBoot</p>
+      <p>Thymeleaf</p>
+      <p>Spring Security</p>
+      <p>Ionic</p>
+      <p>Angular</p>
+      <p>Typescript</p>
+      <p>MySQL</p>
+      <p>SQLite</p>
+      <p>H2</p>
+      <p>Github</p>
+      <p>Oracle Cloud</p>
+      <p>Linux</p>
+      <p>WebRTC</p>
+      <p>WebSockets</p>
+    </div>
+  </div>
+</div>
+
+<div class="services" id="services">
+  <h1>Services</h1>
+  <div class="services-wrap">
+    <p>GUI Apps</p>
+    <p>Backend Development</p>
+    <p>Utility Scripts</p>
+    <p>Any Custom Apps</p>
+  </div>
+</div>
+
+<div class="portfolio" id="portfolio">
+  <h1>Portfolio</h1>
+  <div class="portfolio-wrap">
+    <app-portfolio-card
+      *ngFor="let portfolio of portfolioData"
+      [portfolio]="portfolio"
+    ></app-portfolio-card>
+  </div>
+</div>
+
+<app-footer></app-footer>
